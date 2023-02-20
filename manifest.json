@@ -1,0 +1,12 @@
+{
+  "name": "Figma SigFig",
+  "id": "1208559706734330786",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html"
+}

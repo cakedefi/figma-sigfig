@@ -1,0 +1,16 @@
+{
+  "name": "Figma SigFig",
+  "version": "1.0.0",
+  "description": "Figma plugin to round numbers to significant figures.",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "*",
+    "typescript": "*"
+  }
+}

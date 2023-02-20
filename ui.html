@@ -1,0 +1,18 @@
+<h2>Round to significant figures</h2>
+<p>Use only with crypto values. e.g. "12345.6789 BTC".</p>
+<p>Number: <input id="count" value="8"></p>
+<button id="round">Round</button>
+<button id="cancel">Cancel</button>
+<script>
+
+document.getElementById('round').onclick = () => {
+  const textbox = document.getElementById('count');
+  const count = parseInt(textbox.value, 10);
+  parent.postMessage({ pluginMessage: { type: 'round', count } }, '*')
+}
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+
+</script>
