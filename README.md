@@ -6,6 +6,14 @@ This plugin cleans crypto text layers in Figma:
 - Adds and corrects comma thousandth delimiters
 - retains crypto symbols i.e. "BTC, ETH, etc"
 
+### Examples:
+
+```
+12345678.12345678 > 12,345,678
+12,3456,78.12     > 12,345,678
+23.12345678 BTC   > 23.123456 BTC
+```
+
 ## How to use
 
 This plugin is only available via developer mode. As this is quite a barebones plugin, we won't be submitting it to Figma community, nor does our non-Organization plan allows for internal plugin sharing. You'd have to clone or download this repository to your computer to use it. Cloning via Git is recommended, so you can keep it up to date.
