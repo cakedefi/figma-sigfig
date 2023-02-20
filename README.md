@@ -1,40 +1,35 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# Figma SiigFig
 
-  https://www.figma.com/plugin-docs/plugin-quickstart/
+This plugin cleans crypto text layers:
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+- Rounds down to **n** significant figures
+- Adds and corrects comma thousandth delimiters
+- retains crypto symbols i.e. "BTC, ETH, etc"
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## How to use
 
-  https://nodejs.org/en/download/
+This plugin is only available via developer mode. As this is quite a barebones plugin, we won't be submitting it to Figma community, nor does our non-Organization plan allows for internal plugin sharing. You'd have to clone or download this repository to your computer to use it. Cloning via Git is recommended, so you can keep it up to date.
 
-Next, install TypeScript using the command:
+After cloning or downloading `figma-sigfig` to a permanent location in your computer, go to Figma and select from the menu: `Plugins > Development > Import plugin from manifest`, then select `manifest.json` from where you saved the `figma-sigfig` folder.
 
-  npm install -g typescript
+You should now be able to run the plugin via the `COMMAND + /` command.
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+Select one or more text layers, then trigger the plugin command via `COMMAND + /`. Type "figma-sigfig" into the search to run the plugin. Your text layer(s) should be cleaned.
 
-  npm install --save-dev @figma/plugin-typings
+## Credits
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+Author(s): Aen
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+---
 
-For more information, visit https://www.typescriptlang.org/
+## Contributing
 
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
+These are to-dos for improving the plugin. Please feel free to contribute:
 
-We recommend writing TypeScript code using Visual Studio code:
+- Properly support user locale via `Intl`
+- UI and UX improvements
+- Adopt official Figma styles for plugin UI styling
+- More robust string correction for fiat values e.g. `$99,999.99 USD`
+- Support for date formatting
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+Pull requests welcomed!
