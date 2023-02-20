@@ -1,6 +1,6 @@
-# Figma SiigFig
+# Figma SigFig plugin
 
-This plugin cleans crypto text layers:
+This plugin cleans crypto text layers in Figma:
 
 - Rounds down to **n** significant figures
 - Adds and corrects comma thousandth delimiters
@@ -31,5 +31,6 @@ These are to-dos for improving the plugin. Please feel free to contribute:
 - Adopt official Figma styles for plugin UI styling
 - More robust string correction for fiat values e.g. `$99,999.99 USD`
 - Support for date formatting
+- FigJam support (untested)
 
 Pull requests welcomed!
