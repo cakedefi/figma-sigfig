@@ -16,7 +16,7 @@ This plugin cleans crypto text layers in Figma:
 
 ## How to use
 
-This plugin is only available via developer mode. As this is quite a barebones plugin, we won't be submitting it to Figma community, nor does our non-Organization plan allows for internal plugin sharing. You'd have to clone or download this repository to your computer to use it. Cloning via Git is recommended, so you can keep it up to date.
+This plugin is only available via developer mode. As this is quite a barebones plugin, it's not yet ready for Figma community submission. You'd have to clone or download this repository to your computer to use it. Cloning via Git is recommended, so you can keep it up to date.
 
 After cloning or downloading `figma-sigfig` to a permanent location in your computer, go to Figma and select from the menu: `Plugins > Development > Import plugin from manifest`, then select `manifest.json` from where you saved the `figma-sigfig` folder.
 
@@ -32,7 +32,7 @@ Author(s): Aen
 
 ## Contributing
 
-These are to-dos for improving the plugin. Please feel free to contribute:
+The goal is to get the plugin to a relatively polished state and have more features, then submit it to GitHub Community. These are to-dos for improving the plugin. Please feel free to contribute:
 
 - Properly support user locale via `Intl`
 - UI and UX improvements
